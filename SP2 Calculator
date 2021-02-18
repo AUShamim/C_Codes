@@ -1,0 +1,129 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+char operation();
+double user_in();
+
+void main()
+{
+    double total = 0;
+    int flag = 1;
+    while (flag)
+    {
+        operation;
+        char ope_in;
+        ope_in = operation();
+
+        if (ope_in == 'a')
+        {
+            int s_flag = 1;
+            while (s_flag)
+            {
+                printf("\n\nOn Hold: %.2lf\n\n", total);
+                user_in;
+                printf("0. End\n");
+                double u_in;
+                u_in = user_in();
+
+                if (u_in == 0)
+                {
+                    s_flag = 0;
+                }
+                else
+                {
+                    total = total + u_in;
+                }
+            }
+        }
+        if (ope_in == 'b')
+        {
+            int s_flag = 1;
+            while (s_flag)
+            {
+                printf("\n\nOn Hold: %.2lf\n\n", total);
+                user_in;
+                printf("0. End\n");
+                double u_in;
+                u_in = user_in();
+
+                if (u_in == 0)
+                {
+                    s_flag = 0;
+                }
+                else
+                {
+                    total = total - u_in;
+                }
+            }
+        }
+        if (ope_in == 'c')
+        {
+            int s_flag = 1;
+            while (s_flag)
+            {
+                printf("\n\nOn Hold: %.2lf\n\n", total);
+                user_in;
+                printf("0. End\n");
+                double u_in;
+                u_in = user_in();
+
+                if (u_in == 0)
+                {
+                    s_flag = 0;
+                }
+                else
+                {
+                    total = total * u_in;
+                }
+            }
+        }
+        if (ope_in == 'd')
+        {
+            int s_flag = 1;
+            while (s_flag)
+            {
+                printf("\n\nOn Hold: %.2lf\n\n", total);
+                user_in;
+                printf("0. End\n");
+                double u_in;
+                u_in = user_in();
+
+                if (u_in == 0)
+                {
+                    s_flag = 0;
+                }
+                else
+                {
+                    total = total / u_in;
+                }
+            }
+        }
+        if (ope_in == 'e')
+        {
+            printf("\n\nTotal %.2lf\n\n", total);
+            exit(0);
+        }
+    }
+}
+
+char operation()
+{
+    char ope_in;
+    printf("\n\nSelect an Operation\n");
+    printf("a. Summation\n");
+    printf("b. Subtraction\n");
+    printf("c. Multiplication\n");
+    printf("d. Divition\n");
+    printf("e. Exit\n");
+    printf("Enter your choice: ");
+    scanf("%c", &ope_in);
+    return ope_in;
+}
+
+double user_in()
+{
+    double u_in;
+    printf("Enter a Number: ");
+    scanf("%lf", &u_in);
+    return u_in;
+}
