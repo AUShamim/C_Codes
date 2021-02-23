@@ -103,6 +103,10 @@ void main()
             printf("\n\nTotal %.2lf\n\n", total);
             exit(0);
         }
+        else
+        {
+            printf("\n\nWrong Selection. \nTry Again.");
+        }
     }
 }
 
